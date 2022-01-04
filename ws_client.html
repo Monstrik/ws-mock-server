@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WebSocket Playground</title>
+</head>
+<body>
+</body>
+<script>
+  const ws = new WebSocket('ws://localhost:9704/')
+  ws.onopen = function () {
+    console.log('WebSocket Client Connected')
+
+    function sendNumber () {
+      const loginMsg = {
+        type: 'login',
+        userid: 'USER',
+        pass: 's7UW26iGE/iVfk2ihPYIcyzRqZRi/Ztb23UNMomf3xrBzGKUHKzfNwZe5PIR/0zvfevYvkJnKLQVhR4U9/kObD/Ir0z6mBfLLgFwEcRm08jYI/nk7lDU+W32PqduTOCThlkXYueQslK54vR9rKvMs='
+      }
+      const randomNumber = Math.round(Math.random() * 0xffffff)
+      const randomNumberMsg = { randomNumber: randomNumber.toString() }
+      let message;
+      if (randomNumber % 2 === 0) {
+        message = JSON.stringify(loginMsg)
+      } else {
+        message = JSON.stringify(randomNumberMsg)
+      }
+      ws.send(message)
+      setTimeout(sendNumber, 5000)
+    }
+
+    sendNumber()
+  }
+  ws.onmessage = function (e) {
+    console.log(JSON.parse(e.data))
+    // console.log("Received: '" + e.data + "'");
+  }
+</script>
+</html>
