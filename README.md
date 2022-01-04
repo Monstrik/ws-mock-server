@@ -59,13 +59,13 @@ Given the following `db.json`:
        "result": "OK",
        "type": "verifylogin",
        "active": "Y",
-       "userid": "julian@fundamentalinteractions.com",
+       "userid": "julian@google.com",
        "verify_level": 0
      },
      "verifylogin-error": {
        "result": "OK",
        "result": "invalid user/password",
-       "userid": "julian@fundamentalinteractions.com"
+       "userid": "julian@google.com"
      }
    }
 
