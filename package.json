@@ -4,7 +4,7 @@
   "description": "Mock websocket endpoints with ease",
   "main": "src/index.js",
   "bin": {
-    "ws-server": "bin/ws-mock-server.js"
+    "ws-mock-server": "bin/ws-mock-server.js"
   },
   "nyc": {
     "check-coverage": true,
@@ -33,7 +33,7 @@
   "bugs": {
     "url": "https://github.com/Monstrik/ws-mock-server/issues"
   },
-  "homepage": "https://github.com/Monstrik/ws-mock-server/ws-server#readme",
+  "homepage": "https://github.com/Monstrik/ws-mock-server/ws-mock-Fserver#readme",
   "dependencies": {
     "argparse": "^1.0.10",
     "deepmerge": "^3.0.0",

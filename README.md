@@ -2,7 +2,7 @@
 
 > Mock websocket endpoints with ease
 
-ws-server was developed in order to allow a developer to easily mock websocket apis in a few seconds.
+ws-mock-server was developed in order to allow a developer to easily mock websocket apis in a few seconds.
 
 
 # Install
@@ -11,7 +11,7 @@ ws-server was developed in order to allow a developer to easily mock websocket a
 
 # Getting started
 
-ws-server lets you send through a socket connection data defined in a json file.
+ws-mock-server lets you send through a socket connection data defined in a json file.
 
 A js file can be used instead of a json in order to perform operations or send random stuff, such js should export an object.
 
