@@ -1,0 +1,27 @@
+{
+  "challenge": {
+    "result": "OK",
+    "type": "challenge",
+    "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCvBXTe278Lwg2MoI7iGKolSYuF+sNFKrsZplxCN9x0kItU3KIf8+1q60ILLwLewCEf7foxzpWp32j9YYU9vNBghuJ7BHcDYTffTRcv+QdNno491j701Hq7DIw13AGCQQTRcnfclvblnytIEWoQsiUvPJcdiWgqJIX3IQGA47a+uwIDAQAB"
+  },
+  "login": {
+    "result": "OK",
+    "type": "login"
+  },
+  "login-error": {
+    "result": "invalid user/password",
+    "type": "login"
+  },
+  "verifylogin": {
+    "result": "OK",
+    "type": "verifylogin",
+    "active": "Y",
+    "userid": "julian@fundamentalinteractions.com",
+    "verify_level": 0
+  },
+  "verifylogin-error": {
+    "result": "OK",
+    "result": "invalid user/password",
+    "userid": "julian@fundamentalinteractions.com"
+  }
+}

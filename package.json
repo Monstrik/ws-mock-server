@@ -14,7 +14,7 @@
     ]
   },
   "scripts": {
-    "start": "node bin/ws-mock-server.js -i db.json",
+    "start": "node bin/ws-mock-server.js -i example/db.json",
     "test": "NODE_ENV=test && nyc ./node_modules/.bin/mocha",
     "coverage": "npm run test && nyc report --reporter=text-lcov | coveralls",
     "coverage-html": "npm run test && nyc report --reporter=html"

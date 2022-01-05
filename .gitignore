@@ -1,6 +1,5 @@
 node_modules
 coverage
-db.json
 .coveralls.yml
 .nyc_output
 .idea
