@@ -4,7 +4,7 @@
   "description": "Mock websocket endpoints with ease",
   "main": "src/index.js",
   "bin": {
-    "ws-server": "./bin/ws-server.js"
+    "ws-server": "bin/ws-mock-server.js"
   },
   "nyc": {
     "check-coverage": true,
@@ -14,26 +14,26 @@
     ]
   },
   "scripts": {
-    "start": "node ./bin/ws-mock-server.js -i db.json",
+    "start": "node bin/ws-mock-server.js -i db.json",
     "test": "NODE_ENV=test && nyc ./node_modules/.bin/mocha",
     "coverage": "npm run test && nyc report --reporter=text-lcov | coveralls",
     "coverage-html": "npm run test && nyc report --reporter=html"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/abidibo/ws-server.git"
+    "url": "git+https://github.com/Monstrik/ws-mock-server.git"
   },
   "keywords": [
     "websocket",
     "mock",
     "server"
   ],
-  "author": "abidibo <abidibo@gmail.com> (https://www.abidibo.net)",
+  "author": "alex",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/abidibo/ws-server/issues"
+    "url": "https://github.com/Monstrik/ws-mock-server/issues"
   },
-  "homepage": "https://github.com/abidibo/ws-server#readme",
+  "homepage": "https://github.com/Monstrik/ws-mock-server/ws-server#readme",
   "dependencies": {
     "argparse": "^1.0.10",
     "deepmerge": "^3.0.0",
