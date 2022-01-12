@@ -13,7 +13,7 @@ function WSS (db, port) {
       // clear cache, require should always run again to detect file changes
       delete require.cache[require.resolve(db)]
       const resDB = require(db)
-      return resDB[requestData.type] ? resDB[requestData.type] : { status: 'err', error: 'Unknown message type' }
+      return resDB[requestData.type] ? resDB[requestData.type] : { result: 'err', error: 'Unknown message type' }
     }
 
     // send data through socket
